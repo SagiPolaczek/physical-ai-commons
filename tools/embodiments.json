@@ -1,0 +1,741 @@
+{
+  "reviewedAt": "2026-09-29",
+  "entries": {
+    "A01": {
+      "tags": [
+        "Virtual agent / abstract effector"
+      ],
+      "note": "Planar Push-T uses an abstract pushing effector; this label describes the benchmark environment.",
+      "source_url": "https://github.com/real-stanford/diffusion_policy"
+    },
+    "A02": {
+      "tags": [
+        "Single-arm",
+        "Bimanual"
+      ],
+      "note": "The robomimic resource includes single-arm tasks and a two-arm transport task.",
+      "source_url": "https://robomimic.github.io/docs/datasets/robomimic_v0.1.html"
+    },
+    "A03": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/Farama-Foundation/Metaworld"
+    },
+    "A04": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/stepjam/RLBench"
+    },
+    "A05": {
+      "tags": [
+        "Single-arm",
+        "Mobile manipulator",
+        "Dexterous hand",
+        "Humanoid"
+      ],
+      "note": "ManiSkill is a framework with multiple supported embodiments. Available robots and tasks depend on the version; these tags do not mean each task supports every robot.",
+      "source_url": "https://github.com/mani-skill/ManiSkill"
+    },
+    "A06": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://lifelong-robot-learning.github.io/LIBERO/html/getting_started/overview.html"
+    },
+    "A07": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/mees/calvin"
+    },
+    "A08": {
+      "tags": [
+        "Single-arm",
+        "Gripper / suction tool"
+      ],
+      "note": "The CLIPort/Ravens task suite uses a single arm with a suction end effector.",
+      "source_url": "https://cliport.github.io/"
+    },
+    "A09": {
+      "tags": [
+        "Single-arm",
+        "Gripper / suction tool"
+      ],
+      "note": "VIMA-Bench uses a single arm with a suction end effector.",
+      "source_url": "https://vimalabs.github.io/"
+    },
+    "A10": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://robotics.farama.org/envs/franka_kitchen/"
+    },
+    "B01": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/robot-colosseum/robot-colosseum"
+    },
+    "B02": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://www.di.ens.fr/willow/research/gembench/"
+    },
+    "B03": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://sylvestf.github.io/LIBERO-plus/"
+    },
+    "B04": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/html/2510.03827v1"
+    },
+    "B05": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2412.18194"
+    },
+    "B06": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2604.09860v1"
+    },
+    "B07": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://github.com/allenai/molmospaces/blob/main/molmo_spaces/evaluation/ms-bench.md"
+    },
+    "B08": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://allenai.github.io/molmospaces/mb-bench/"
+    },
+    "B09": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/Selina2023/Open6DOR"
+    },
+    "B10": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arnold-benchmark.github.io/"
+    },
+    "B11": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://github.com/AgibotTech/genie_sim"
+    },
+    "C01": {
+      "tags": [
+        "Bimanual"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://robotwin-platform.github.io/doc/tasks/"
+    },
+    "C02": {
+      "tags": [
+        "Bimanual"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2407.00278v2"
+    },
+    "C03": {
+      "tags": [
+        "Bimanual"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2507.00435v2"
+    },
+    "D01": {
+      "tags": [
+        "Single-arm",
+        "Mobile manipulator",
+        "Humanoid",
+        "Legged robot"
+      ],
+      "note": "The project documents single-arm mobile platforms, humanoids and quadrupeds with arms. These are simulator capabilities; a particular leaderboard protocol can fix one robot.",
+      "source_url": "https://robocasa.ai/"
+    },
+    "D02": {
+      "tags": [
+        "Bimanual",
+        "Mobile manipulator"
+      ],
+      "note": "The BEHAVIOR family includes mobile bimanual household manipulation. Check the robot used by the specific challenge edition.",
+      "source_url": "https://behavior.stanford.edu/challenge/index.html"
+    },
+    "D03": {
+      "tags": [
+        "Bimanual",
+        "Mobile manipulator"
+      ],
+      "note": "BiGym evaluates mobile bimanual manipulation.",
+      "source_url": "https://github.com/NeuracoreAI/bigym"
+    },
+    "D04": {
+      "tags": [
+        "Mobile manipulator"
+      ],
+      "note": "EBench documents tabletop and mobile manipulation tracks. The mobile label does not apply to every task.",
+      "source_url": "https://github.com/InternRobotics/EBench"
+    },
+    "D05": {
+      "tags": [
+        "Bimanual"
+      ],
+      "note": "The paper documents bimanual real-world evaluation with ARX X5, Piper and Piper X.",
+      "source_url": "https://arxiv.org/html/2607.04434v3#S3"
+    },
+    "E01": {
+      "tags": [
+        "Virtual agent / abstract effector"
+      ],
+      "note": "Memory-T-Bench uses the 2D Push-T environment rather than an articulated robot.",
+      "source_url": "https://github.com/KuanchengWang/CAMP"
+    },
+    "E02": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Memory-Manip-Bench uses a Franka Panda in robosuite / MuJoCo.",
+      "source_url": "https://github.com/KuanchengWang/CAMP"
+    },
+    "E03": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/html/2501.18564v1"
+    },
+    "E04": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/html/2511.11478v1"
+    },
+    "E05": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2603.01229v3"
+    },
+    "E06": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://robomme.github.io/"
+    },
+    "E07": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://mikasarobo.github.io/benchmarking.html"
+    },
+    "E08": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2604.18933v2"
+    },
+    "E09": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2606.22338v1"
+    },
+    "E10": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2605.10921"
+    },
+    "F01": {
+      "tags": [
+        "Bimanual"
+      ],
+      "note": "ActiveArena jointly controls two arms, grippers, torso and head. The reported physical platform is Astribot S1; this is not a locomotion evaluation.",
+      "source_url": "https://arxiv.org/html/2609.24124v1#A5"
+    },
+    "F02": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2603.12193"
+    },
+    "F03": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2601.22153v1"
+    },
+    "F04": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/html/2609.05178v2"
+    },
+    "F05": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/html/2609.24350v1"
+    },
+    "F06": {
+      "tags": [
+        "Dexterous hand"
+      ],
+      "note": "CausalWorld uses the three-finger TriFinger platform.",
+      "source_url": "https://github.com/rr-learning/CausalWorld"
+    },
+    "G01": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2605.27886v1"
+    },
+    "G02": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2606.00773v1"
+    },
+    "G03": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2606.27079v1"
+    },
+    "G04": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/html/2606.23686v1"
+    },
+    "G05": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2608.05313v1"
+    },
+    "G06": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2609.03611v1"
+    },
+    "G07": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2605.12386v2"
+    },
+    "G08": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2608.17600v1"
+    },
+    "H01": {
+      "tags": [
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://robotics.farama.org/envs/adroit_hand/"
+    },
+    "H02": {
+      "tags": [
+        "Bimanual",
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/PKU-MARL/DexterousHands"
+    },
+    "H03": {
+      "tags": [
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2305.05706"
+    },
+    "H04": {
+      "tags": [
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2604.09294v1"
+    },
+    "H05": {
+      "tags": [
+        "Bimanual",
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://bench2dex.github.io/"
+    },
+    "H06": {
+      "tags": [
+        "Bimanual",
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2605.16257v2"
+    },
+    "H07": {
+      "tags": [
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2607.08751v1"
+    },
+    "H08": {
+      "tags": [
+        "Human hand"
+      ],
+      "note": "TactiDex records human-hand demonstrations; the tag describes the demonstrated embodiment.",
+      "source_url": "https://arxiv.org/abs/2607.09190v1"
+    },
+    "I01": {
+      "tags": [
+        "Virtual agent / abstract effector"
+      ],
+      "note": "SoftGym tasks use abstract simulated effectors; deformable objects do not imply a soft robot.",
+      "source_url": "https://arxiv.org/abs/2011.07215v2"
+    },
+    "I02": {
+      "tags": [
+        "Virtual agent / abstract effector"
+      ],
+      "note": "DaXBench uses simulated manipulation effectors; deformable objects do not imply a soft robot.",
+      "source_url": "https://daxbench.github.io/"
+    },
+    "I03": {
+      "tags": [
+        "Virtual agent / abstract effector"
+      ],
+      "note": "PlasticineLab uses simulated manipulation tools; the manipulated material is not the robot embodiment.",
+      "source_url": "https://plasticinelab.csail.mit.edu/"
+    },
+    "I04": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://github.com/GarmentLab/GarmentLab"
+    },
+    "I05": {
+      "tags": [
+        "Bimanual",
+        "Dexterous hand"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/wayrise/DexGarmentLab"
+    },
+    "I06": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2606.04206v1"
+    },
+    "I07": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2609.10243v2"
+    },
+    "J01": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://functional-manipulation-benchmark.github.io/"
+    },
+    "J02": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/clvrai/furniture-bench"
+    },
+    "J03": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://www.nist.gov/publications/performance-measures-benchmark-grasping-manipulation-and-assembly-deformable-objects"
+    },
+    "J04": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2502.05086"
+    },
+    "K01": {
+      "tags": [
+        "Navigation agent"
+      ],
+      "note": "Navigation agent morphology depends on the Habitat challenge and configuration.",
+      "source_url": "https://aihabitat.org/challenge/2021/"
+    },
+    "K02": {
+      "tags": [
+        "Mobile manipulator"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://aihabitat.org/challenge/2022_rearrange/"
+    },
+    "K03": {
+      "tags": [
+        "Single-arm",
+        "Mobile manipulator"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://ovmm.github.io/"
+    },
+    "K04": {
+      "tags": [
+        "Navigation agent"
+      ],
+      "note": "Goal navigation uses an embodied navigation agent; it is not a manipulation benchmark.",
+      "source_url": "https://arxiv.org/abs/2404.06609"
+    },
+    "K05": {
+      "tags": [
+        "Virtual agent / abstract effector"
+      ],
+      "note": "ALFRED uses the AI2-THOR virtual household agent and discrete interaction actions.",
+      "source_url": "https://askforalfred.com/"
+    },
+    "K06": {
+      "tags": [
+        "Virtual agent / abstract effector"
+      ],
+      "note": "TEACh uses AI2-THOR virtual household agents and interaction actions.",
+      "source_url": "https://github.com/alexa/teach"
+    },
+    "K07": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://github.com/EmbodiedBench/EmbodiedBench"
+    },
+    "K08": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2311.11183"
+    },
+    "L01": {
+      "tags": [
+        "Mobile manipulator"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://aihabitat.org/partnr/"
+    },
+    "L02": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://github.com/TUMcps/human-robot-gym"
+    },
+    "L03": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2205.09747"
+    },
+    "L04": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2506.23152"
+    },
+    "L05": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/abs/2402.00708"
+    },
+    "L06": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://github.com/Healthcare-Robotics/assistive-gym"
+    },
+    "M01": {
+      "tags": [
+        "Bimanual",
+        "Dexterous hand",
+        "Humanoid"
+      ],
+      "note": "HumanoidBench evaluates whole-body humanoid control, including coordinated hands and locomotion.",
+      "source_url": "https://humanoid-bench.github.io/"
+    },
+    "M02": {
+      "tags": [
+        "Humanoid",
+        "Legged robot"
+      ],
+      "note": "LocoMuJoCo spans bipeds, quadrupeds and musculoskeletal models; tags apply across the resource family.",
+      "source_url": "https://arxiv.org/abs/2311.02496v2"
+    },
+    "M03": {
+      "tags": [
+        "Legged robot",
+        "Virtual agent / abstract effector"
+      ],
+      "note": "The Control Suite spans multiple morphologies, including legged agents and simplified control systems.",
+      "source_url": "https://github.com/google-deepmind/dm_control"
+    },
+    "M04": {
+      "tags": [
+        "Soft robot"
+      ],
+      "note": "EvoGym evaluates voxel-based soft robot morphologies, not merely soft objects.",
+      "source_url": "https://github.com/EvolutionGym/evogym"
+    },
+    "N01": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://robo-arena.github.io/"
+    },
+    "N02": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Ma_Table30_V2_Evaluating_Generalized_Models_by_Real_Robots_at_Scale_CVPRW_2026_paper.html"
+    },
+    "N03": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2605.29710v1"
+    },
+    "N04": {
+      "tags": [
+        "Single-arm",
+        "Bimanual"
+      ],
+      "note": "The catalog explicitly records SO-101 single-arm and bimanual setups.",
+      "source_url": "https://arxiv.org/abs/2607.24481"
+    },
+    "N05": {
+      "tags": [
+        "Dexterous hand"
+      ],
+      "note": "The 2022 Real Robot Challenge uses the TriFinger platform.",
+      "source_url": "https://webdav.tuebingen.mpg.de/real-robot-challenge/2022/docs/tasks.html"
+    },
+    "N06": {
+      "tags": [
+        "Single-arm",
+        "Mobile manipulator"
+      ],
+      "note": "SIMPLER includes WidowX single-arm and Google Robot mobile-manipulator configurations. The mobile platform label does not imply every task evaluates base motion.",
+      "source_url": "https://github.com/simpler-env/SimplerEnv"
+    },
+    "N07": {
+      "tags": [
+        "Single-arm"
+      ],
+      "note": "Labels describe documented robot configurations in the linked benchmark resource; check the task and edition for the exact setup.",
+      "source_url": "https://arxiv.org/abs/2512.16881"
+    },
+    "O01": {
+      "tags": [
+        "Not robot-specific"
+      ],
+      "note": "Generated-video evaluation is not tied to a single robot embodiment.",
+      "source_url": "https://arxiv.org/abs/2502.20694"
+    },
+    "O02": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2605.29360v1"
+    },
+    "O03": {
+      "tags": [
+        "Not specified"
+      ],
+      "note": "The current catalog has not established an embodiment for this entry. This does not mean the resource is embodiment-agnostic.",
+      "source_url": "https://arxiv.org/html/2604.19092v1"
+    },
+    "O04": {
+      "tags": [
+        "Gripper / suction tool"
+      ],
+      "note": "GraspNet evaluates gripper grasp proposals; it does not fix a complete robot body.",
+      "source_url": "https://graspnet.net/"
+    },
+    "O05": {
+      "tags": [
+        "Gripper / suction tool"
+      ],
+      "note": "SuctionNet evaluates suction contact proposals; it does not fix a complete robot body.",
+      "source_url": "https://graspnet.net/suction"
+    }
+  }
+}

@@ -24,7 +24,10 @@ for e in raw:
  s=e.get('source') or {}
  papers.append({'title':e['title'],'url':s.get('url'),'version':s.get('version'),'reading':e['read-status'],'status':e['status'],'caveat':e.get('caveat',''),'evaluations':[{k:v for k,v in x.items() if k in ['benchmark','name','kind','protocol','locator']} for x in e['entries']]})
 assert len(benchmarks)==102 and len(papers)==107 and sum(len(x['evaluations']) for x in papers)==240
-payload={'asOf':'2026-09-28','researchCommit':'ad87113','benchmarks':benchmarks,'papers':papers}
+embodiments=json.loads((Path(__file__).parent/'embodiments.json').read_text())
+assert set(embodiments['entries'])=={b['id'] for b in benchmarks}
+for b in benchmarks:b['embodiment']=embodiments['entries'][b['id']]
+payload={'embodimentsAsOf':embodiments['reviewedAt'],'asOf':'2026-09-28','researchCommit':'ad87113','benchmarks':benchmarks,'papers':papers}
 text=json.dumps(payload,ensure_ascii=False,separators=(',',':'))
 assert '.wiki-cache' not in text and '/Users/' not in text and '/private/' not in text
 (out/'data.json').write_text(text+'\n')
