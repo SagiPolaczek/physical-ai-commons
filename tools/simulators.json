@@ -1,0 +1,1417 @@
+{
+  "reviewedAt": "2026-09-30",
+  "convention": "Tags name the documented simulator platform; frameworks and version/track boundaries are in notes. For offline resources with simulated source trajectories, tags identify the source simulator. Optional development simulators are explicitly noted. Unknowns are not inferred from related benchmarks.",
+  "entries": {
+    "A01": {
+      "tags": [
+        "Pymunk"
+      ],
+      "note": "The simulated planar Push-T environment constructs a Pymunk physics space. Real-robot Push-T is a separate setup.",
+      "sources": [
+        {
+          "url": "https://github.com/real-stanford/diffusion_policy/blob/main/diffusion_policy/env/pusht/pusht_env.py",
+          "locator": "PushTEnv._setup: pymunk.Space"
+        }
+      ],
+      "status": "verified"
+    },
+    "A02": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "Simulation tasks use robosuite on MuJoCo; the resource also includes physical-robot datasets.",
+      "sources": [
+        {
+          "url": "https://robomimic.github.io/docs/datasets/robomimic_v0.1.html",
+          "locator": "MuJoCo / robosuite version notes"
+        }
+      ],
+      "status": "verified"
+    },
+    "A03": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "Meta-World uses MuJoCo.",
+      "sources": [
+        {
+          "url": "https://github.com/Farama-Foundation/Metaworld/blob/main/pyproject.toml",
+          "locator": "Runtime dependency: mujoco"
+        }
+      ],
+      "status": "verified"
+    },
+    "A04": {
+      "tags": [
+        "CoppeliaSim"
+      ],
+      "note": "RLBench uses CoppeliaSim through PyRep. The documented installation specifies CoppeliaSim 4.1.",
+      "sources": [
+        {
+          "url": "https://github.com/stepjam/RLBench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "A05": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "ManiSkill is powered by SAPIEN. Versions differ in parallelization and supported tasks.",
+      "sources": [
+        {
+          "url": "https://github.com/mani-skill/ManiSkill",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "A06": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "LIBERO uses the robosuite / MuJoCo simulation stack.",
+      "sources": [
+        {
+          "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "A07": {
+      "tags": [
+        "PyBullet"
+      ],
+      "note": "CALVIN uses PyBullet; its documentation discusses PyBullet EGL rendering.",
+      "sources": [
+        {
+          "url": "https://github.com/mees/calvin",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "A08": {
+      "tags": [
+        "PyBullet"
+      ],
+      "note": "The CLIPort simulation tasks are adapted from the Ravens PyBullet task suite.",
+      "sources": [
+        {
+          "url": "https://github.com/cliport/cliport",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "A09": {
+      "tags": [
+        "PyBullet"
+      ],
+      "note": "The VIMA-Bench base environment creates and steps a PyBullet client.",
+      "sources": [
+        {
+          "url": "https://github.com/vimalabs/VIMABench/blob/main/vima_bench/env/base.py",
+          "locator": "VIMAEnvBase: connect_pybullet_hook"
+        }
+      ],
+      "status": "verified"
+    },
+    "A10": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "The maintained Gymnasium-Robotics environment uses MuJoCo. Legacy D4RL editions use different bindings.",
+      "sources": [
+        {
+          "url": "https://github.com/Farama-Foundation/Gymnasium-Robotics",
+          "locator": "MuJoCo environments and installation"
+        }
+      ],
+      "status": "verified"
+    },
+    "B01": {
+      "tags": [
+        "CoppeliaSim"
+      ],
+      "note": "COLOSSEUM builds on PyRep / RLBench, whose simulator is CoppeliaSim.",
+      "sources": [
+        {
+          "url": "https://github.com/robot-colosseum/robot-colosseum",
+          "locator": "README: installation / benchmark environment"
+        },
+        {
+          "url": "https://github.com/stepjam/RLBench",
+          "locator": "Installation: CoppeliaSim / PyRep"
+        }
+      ],
+      "status": "verified"
+    },
+    "B02": {
+      "tags": [
+        "CoppeliaSim"
+      ],
+      "note": "GEMBench installation requires CoppeliaSim, PyRep and RLBench.",
+      "sources": [
+        {
+          "url": "https://github.com/vlc-robot/robot-3dlotus/blob/main/INSTALL.md",
+          "locator": "CoppeliaSim installation"
+        }
+      ],
+      "status": "verified"
+    },
+    "B03": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "This benchmark extends LIBERO tasks or evaluation using its robosuite / MuJoCo stack.",
+      "sources": [
+        {
+          "url": "https://github.com/sylvestf/LIBERO-plus",
+          "locator": "Benchmark construction / LIBERO setup"
+        },
+        {
+          "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+          "locator": "Simulation setup: MUJOCO_EGL_DEVICE_ID"
+        }
+      ],
+      "status": "verified"
+    },
+    "B04": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "This benchmark extends LIBERO tasks or evaluation using its robosuite / MuJoCo stack.",
+      "sources": [
+        {
+          "url": "https://github.com/Zxy-MLlab/LIBERO-PRO",
+          "locator": "Benchmark construction / LIBERO setup"
+        },
+        {
+          "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+          "locator": "Simulation setup: MUJOCO_EGL_DEVICE_ID"
+        }
+      ],
+      "status": "verified"
+    },
+    "B05": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "VLABench uses MuJoCo and its MJX bindings.",
+      "sources": [
+        {
+          "url": "https://github.com/OpenMOSS/VLABench/blob/main/requirements.txt",
+          "locator": "mujoco and mujoco-mjx dependencies"
+        }
+      ],
+      "status": "verified"
+    },
+    "B06": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "RoboLab runs through Isaac Lab. The current installation offers Isaac Sim 5.0 or 5.1 stacks.",
+      "sources": [
+        {
+          "url": "https://github.com/NVlabs/RoboLab",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "B07": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "MolmoSpaces currently supports data generation and benchmarking only in MuJoCo. Asset availability for Isaac and ManiSkill does not establish benchmark support.",
+      "sources": [
+        {
+          "url": "https://github.com/allenai/molmospaces",
+          "locator": "Simulation assets: benchmark backend support"
+        }
+      ],
+      "status": "verified"
+    },
+    "B08": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "MolmoSpaces currently supports data generation and benchmarking only in MuJoCo. Asset availability for Isaac and ManiSkill does not establish benchmark support.",
+      "sources": [
+        {
+          "url": "https://github.com/allenai/molmospaces",
+          "locator": "Simulation assets: benchmark backend support"
+        }
+      ],
+      "status": "verified"
+    },
+    "B09": {
+      "tags": [
+        "Isaac Gym"
+      ],
+      "note": "Open6DOR uses Isaac Gym for simulation and Blender for additional rendering; Blender is not listed as the physics simulator.",
+      "sources": [
+        {
+          "url": "https://github.com/Selina2023/Open6DOR",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "B10": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "ARNOLD is built on NVIDIA Isaac Sim.",
+      "sources": [
+        {
+          "url": "https://github.com/arnold-benchmark/arnold",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "B11": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "The published Genie Sim 3.0 benchmark uses Isaac Sim 5.1. The broader RT engine also advertises Newton backends; these are not assumed to be benchmark protocol backends.",
+      "sources": [
+        {
+          "url": "https://github.com/AgibotTech/genie_sim",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "C01": {
+      "tags": [
+        "SAPIEN",
+        "Isaac Sim"
+      ],
+      "note": "The original RoboTwin / RoboTwin 2.0 benchmark uses SAPIEN. A separate IsaacLab-Arena branch supports evaluation in Isaac Sim; results depend on the implementation.",
+      "sources": [
+        {
+          "url": "https://github.com/RoboTwin-Platform/RoboTwin",
+          "locator": "RoboTwin 2.0 / supported branches"
+        },
+        {
+          "url": "https://github.com/RoboTwin-Platform/RoboTwin/tree/IsaacLab-Arena",
+          "locator": "Replay and evaluate tasks on IsaacLab-Arena"
+        },
+        {
+          "url": "https://arxiv.org/html/2506.18088v1",
+          "locator": "Simulation environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "C02": {
+      "tags": [
+        "CoppeliaSim"
+      ],
+      "note": "The bimanual PerAct² benchmark requires its RLBench and PyRep forks, using CoppeliaSim.",
+      "sources": [
+        {
+          "url": "https://github.com/markusgrotz/peract_bimanual",
+          "locator": "README: installation / benchmark environment"
+        },
+        {
+          "url": "https://github.com/stepjam/RLBench",
+          "locator": "Installation: simulator"
+        }
+      ],
+      "status": "verified"
+    },
+    "C03": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "The bimanual RoboEval edition uses MuJoCo and BiGym components.",
+      "sources": [
+        {
+          "url": "https://github.com/Robo-Eval/RoboEval",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "D01": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "RoboCasa uses robosuite on MuJoCo.",
+      "sources": [
+        {
+          "url": "https://github.com/robocasa/robocasa",
+          "locator": "README: installation / benchmark environment"
+        },
+        {
+          "url": "https://github.com/ARISE-Initiative/robosuite",
+          "locator": "MuJoCo simulation framework"
+        }
+      ],
+      "status": "verified"
+    },
+    "D02": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "BEHAVIOR-1K uses OmniGibson, which is built on NVIDIA Isaac Sim / Omniverse.",
+      "sources": [
+        {
+          "url": "https://behavior.stanford.edu/getting_started/installation.html",
+          "locator": "Requirements: core simulator dependencies"
+        }
+      ],
+      "status": "verified"
+    },
+    "D03": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "BiGym uses MuJoCo; its package declares the MuJoCo runtime dependency.",
+      "sources": [
+        {
+          "url": "https://github.com/NeuracoreAI/bigym/blob/master/pyproject.toml",
+          "locator": "Runtime dependencies"
+        }
+      ],
+      "status": "verified"
+    },
+    "D04": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "EBench runs an Isaac Sim evaluation server.",
+      "sources": [
+        {
+          "url": "https://github.com/InternRobotics/EBench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "D05": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "RoboDojo runs its simulation tasks on Isaac Sim; it also provides a separate real-robot evaluation track.",
+      "sources": [
+        {
+          "url": "https://github.com/RoboDojo-Benchmark/RoboDojo",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "E01": {
+      "tags": [
+        "Not verified"
+      ],
+      "note": "The reviewed paper describes the simulation tasks but does not name the simulator. The engine has not been verified from released benchmark code.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2606.21188v1",
+          "locator": "Section 4.1.1: benchmark definitions"
+        }
+      ],
+      "status": "unknown"
+    },
+    "E02": {
+      "tags": [
+        "Not verified"
+      ],
+      "note": "The reviewed paper describes the simulation tasks but does not name the simulator. The engine has not been verified from released benchmark code.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2606.21188v1",
+          "locator": "Section 4.1.1: benchmark definitions"
+        }
+      ],
+      "status": "unknown"
+    },
+    "E03": {
+      "tags": [
+        "CoppeliaSim"
+      ],
+      "note": "SAM2Act MemoryBench extends RLBench; its installation requires CoppeliaSim 4.1 and PyRep.",
+      "sources": [
+        {
+          "url": "https://github.com/sam2act/sam2act",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "E04": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "This benchmark extends LIBERO tasks or evaluation using its robosuite / MuJoCo stack.",
+      "sources": [
+        {
+          "url": "https://github.com/libero-mem/libero-mem",
+          "locator": "Benchmark construction / LIBERO setup"
+        },
+        {
+          "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+          "locator": "Simulation setup: MUJOCO_EGL_DEVICE_ID"
+        }
+      ],
+      "status": "verified"
+    },
+    "E05": {
+      "tags": [
+        "SAPIEN",
+        "Isaac Sim"
+      ],
+      "note": "RMBench uses RoboTwin 2.0 on SAPIEN; paper v3 also reports an Isaac Lab–Arena implementation. Preserve the evaluation backend when comparing scores.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2603.01229v3",
+          "locator": "Sections 3.2 and 5"
+        }
+      ],
+      "status": "verified"
+    },
+    "E06": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "RoboMME uses a ManiSkill-based SAPIEN environment.",
+      "sources": [
+        {
+          "url": "https://github.com/RoboMME/robomme_benchmark",
+          "locator": "ManiSkill acknowledgement and SAPIEN renderer configuration"
+        }
+      ],
+      "status": "verified"
+    },
+    "E07": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "MIKASA-Robo and its VLA edition use ManiSkill environments on SAPIEN.",
+      "sources": [
+        {
+          "url": "https://github.com/CognitiveAISystems/MIKASA-Robo",
+          "locator": "README: installation / benchmark environment"
+        },
+        {
+          "url": "https://github.com/mani-skill/ManiSkill",
+          "locator": "SAPIEN simulator"
+        }
+      ],
+      "status": "verified"
+    },
+    "E08": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "MemMimic (called Memimic in the code) is in the MuJoCo environment package. MIKASA is a separate evaluation suite in the same policy repository.",
+      "sources": [
+        {
+          "url": "https://github.com/real-stanford/gated-memory-policy",
+          "locator": "Repository table: mujoco-env / Memimic"
+        }
+      ],
+      "status": "verified"
+    },
+    "E09": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "The interference protocol directly uses RoboMME tasks and its environment.",
+      "sources": [
+        {
+          "url": "https://github.com/SoumilRathi/robomme-interference",
+          "locator": "Built directly on RoboMME"
+        },
+        {
+          "url": "https://github.com/RoboMME/robomme_benchmark",
+          "locator": "ManiSkill / SAPIEN environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "E10": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "RoboMemArena evaluation requires MuJoCo and robosuite; the paper additionally reports real-world memory tasks.",
+      "sources": [
+        {
+          "url": "https://github.com/OpenHelix-Team/RoboMemArena/blob/main/evaluation_benchmark/README.md",
+          "locator": "Evaluation environment prerequisites"
+        }
+      ],
+      "status": "verified"
+    },
+    "F01": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "ActiveArena uses SAPIEN; its installation smoke check imports the simulator and motion-planning dependencies.",
+      "sources": [
+        {
+          "url": "https://github.com/leeibo/ActiveArena",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "F02": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "ActiveManip-Bench is built on NVIDIA Isaac Sim.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2603.12193v1",
+          "locator": "Appendix C.1: simulation platform"
+        }
+      ],
+      "status": "verified"
+    },
+    "F03": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "DynamicVLA simulation and evaluation run through Isaac Lab; the current code specifies Isaac Sim 5.1.",
+      "sources": [
+        {
+          "url": "https://github.com/hzxie/DynamicVLA",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "F04": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "LIBERO-RECOVER evaluates its perturbed LIBERO environments in MuJoCo.",
+      "sources": [
+        {
+          "url": "https://github.com/liulin815/LIBERO-Recovery",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "F05": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "This benchmark extends LIBERO tasks or evaluation using its robosuite / MuJoCo stack.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2609.24350v1",
+          "locator": "Benchmark construction / LIBERO setup"
+        },
+        {
+          "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+          "locator": "Simulation setup: MUJOCO_EGL_DEVICE_ID"
+        }
+      ],
+      "status": "verified"
+    },
+    "F06": {
+      "tags": [
+        "PyBullet"
+      ],
+      "note": "CausalWorld uses PyBullet.",
+      "sources": [
+        {
+          "url": "https://github.com/rr-learning/CausalWorld/blob/master/setup.py",
+          "locator": "Runtime dependency: pybullet"
+        }
+      ],
+      "status": "verified"
+    },
+    "G01": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "Tabero uses Isaac Lab on Isaac Sim, with Taxim/FOTS for tactile simulation.",
+      "sources": [
+        {
+          "url": "https://github.com/NathanWu7/Tabero",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "G02": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "SafeVLA-Bench instruments two MuJoCo-based hosts: LIBERO and RoboCasa.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2606.00773v1",
+          "locator": "Limitations: two MuJoCo-based hosts"
+        }
+      ],
+      "status": "verified"
+    },
+    "G03": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "The benchmark instantiates scenarios in the original RoboTwin framework and cites its SAPIEN simulation stack.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2606.27079v1",
+          "locator": "Abstract, Section III-B and simulation references"
+        },
+        {
+          "url": "https://arxiv.org/html/2506.18088v1",
+          "locator": "RoboTwin simulation platform"
+        }
+      ],
+      "status": "verified"
+    },
+    "G04": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "This benchmark extends LIBERO tasks or evaluation using its robosuite / MuJoCo stack.",
+      "sources": [
+        {
+          "url": "https://github.com/LIBERO-SAFETY/LIBERO-Safety",
+          "locator": "Benchmark construction / LIBERO setup"
+        },
+        {
+          "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+          "locator": "Simulation setup: MUJOCO_EGL_DEVICE_ID"
+        }
+      ],
+      "status": "verified"
+    },
+    "G05": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "Failure-impact FailBench explicitly uses MuJoCo as its core simulator.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2608.05313v1",
+          "locator": "Section IV-A: simulation"
+        }
+      ],
+      "status": "verified"
+    },
+    "G06": {
+      "tags": [
+        "MuJoCo",
+        "SAPIEN"
+      ],
+      "note": "This is an offline video-judging benchmark, not a live simulator. Its simulated source clips come from Meta-World / LIBERO (MuJoCo) and SimplerEnv (SAPIEN); it also includes real videos.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2609.03611v1",
+          "locator": "Appendix A: robometersim and simplerenv"
+        },
+        {
+          "url": "https://github.com/simpler-env/SimplerEnv",
+          "locator": "SAPIEN backend"
+        },
+        {
+          "url": "https://github.com/Farama-Foundation/Metaworld/blob/main/pyproject.toml",
+          "locator": "MuJoCo dependency"
+        }
+      ],
+      "status": "verified"
+    },
+    "G07": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "SafeManip instruments RoboCasa environments, which use robosuite / MuJoCo.",
+      "sources": [
+        {
+          "url": "https://github.com/chengyuehuang511/SafeManip",
+          "locator": "README: installation / benchmark environment"
+        },
+        {
+          "url": "https://github.com/robocasa/robocasa",
+          "locator": "robosuite backend"
+        }
+      ],
+      "status": "verified"
+    },
+    "G08": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "This benchmark extends LIBERO tasks or evaluation using its robosuite / MuJoCo stack.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2608.17600v1",
+          "locator": "Benchmark construction / LIBERO setup"
+        },
+        {
+          "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+          "locator": "Simulation setup: MUJOCO_EGL_DEVICE_ID"
+        }
+      ],
+      "status": "verified"
+    },
+    "H01": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "The maintained Gymnasium-Robotics environment uses MuJoCo. Legacy D4RL editions use different bindings.",
+      "sources": [
+        {
+          "url": "https://github.com/Farama-Foundation/Gymnasium-Robotics",
+          "locator": "MuJoCo environments and installation"
+        }
+      ],
+      "status": "verified"
+    },
+    "H02": {
+      "tags": [
+        "Isaac Gym"
+      ],
+      "note": "Bi-DexHands is built within Isaac Gym. SAPIEN assets in its object collection do not indicate a SAPIEN simulator backend.",
+      "sources": [
+        {
+          "url": "https://github.com/PKU-MARL/DexterousHands",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "H03": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "DexArt uses SAPIEN; the release pins SAPIEN 2.2.1.",
+      "sources": [
+        {
+          "url": "https://github.com/Kami-code/dexart-release/blob/main/setup.py",
+          "locator": "SAPIEN runtime dependency"
+        }
+      ],
+      "status": "verified"
+    },
+    "H04": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "PoMDAR publishes MuJoCo simulation assets for the Orca hand and its 18 benchmark tasks.",
+      "sources": [
+        {
+          "url": "https://github.com/srl-ethz/pomdar_benchmark",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "H05": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "Bench2Dex uses Isaac Lab; installation specifies Isaac Sim 5.1.",
+      "sources": [
+        {
+          "url": "https://github.com/Bench2Dex/Bench2Dex",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "H06": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "DexJoCo describes itself as a MuJoCo-based benchmark.",
+      "sources": [
+        {
+          "url": "https://github.com/brave-eai/dexjoco",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "H07": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "DexVerse is an Isaac Lab extension running on NVIDIA Isaac Sim.",
+      "sources": [
+        {
+          "url": "https://github.com/ycyao216/DexVerse",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "H08": {
+      "tags": [
+        "Isaac Gym"
+      ],
+      "note": "TactiDex contains real-world capture and deployment, plus an Isaac Gym / PhysX environment for its simulated transfer evaluation.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2607.09190v1",
+          "locator": "Appendix: simulation environment and physics parameters"
+        }
+      ],
+      "status": "verified"
+    },
+    "I01": {
+      "tags": [
+        "NVIDIA FleX"
+      ],
+      "note": "SoftGym uses NVIDIA FleX through the PyFleX interface.",
+      "sources": [
+        {
+          "url": "https://github.com/Xingyu-Lin/softgym",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "I02": {
+      "tags": [
+        "DaXBench (JAX)"
+      ],
+      "note": "DaXBench provides its own differentiable deformable-object simulator implemented with JAX.",
+      "sources": [
+        {
+          "url": "https://github.com/AdaCompNUS/DaXBench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "I03": {
+      "tags": [
+        "PlasticineLab (Taichi)"
+      ],
+      "note": "PlasticineLab provides a differentiable material-point simulator implemented with Taichi.",
+      "sources": [
+        {
+          "url": "https://github.com/hzaskywalker/PlasticineLab",
+          "locator": "Installation / plb engine"
+        },
+        {
+          "url": "https://github.com/hzaskywalker/PlasticineLab/blob/main/setup.py",
+          "locator": "Taichi runtime dependency"
+        }
+      ],
+      "status": "verified"
+    },
+    "I04": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "GarmentLab uses Isaac Sim; its release specifies version 4.0.",
+      "sources": [
+        {
+          "url": "https://github.com/GarmentLab/GarmentLab",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "I05": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "DexGarmentLab uses Isaac Sim 4.5.",
+      "sources": [
+        {
+          "url": "https://github.com/wayrise/DexGarmentLab",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "I06": {
+      "tags": [
+        "Genesis"
+      ],
+      "note": "DLO-Lab is built on Genesis and adds its differentiable rod solver.",
+      "sources": [
+        {
+          "url": "https://github.com/UMass-Embodied-AGI/DLO-Lab",
+          "locator": "Quick Example: Genesis Scene and ROD solver"
+        }
+      ],
+      "status": "verified"
+    },
+    "I07": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "FolDeX evaluates garment manipulation on physical robots; its benchmark does not require a physics simulator.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2609.10243v1",
+          "locator": "Benchmark scope and evaluation setup"
+        }
+      ],
+      "status": "verified"
+    },
+    "J01": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "FMB evaluates a physical robotic assembly setup.",
+      "sources": [
+        {
+          "url": "https://functional-manipulation-benchmark.github.io/",
+          "locator": "Benchmark setup"
+        }
+      ],
+      "status": "verified"
+    },
+    "J02": {
+      "tags": [
+        "Isaac Gym"
+      ],
+      "note": "FurnitureBench includes a real-robot benchmark and FurnitureSim, which runs on Isaac Gym.",
+      "sources": [
+        {
+          "url": "https://github.com/clvrai/furniture-bench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "J03": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "NIST task boards are physical fixtures and measurement protocols rather than a simulator-hosted task suite.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/publications/performance-measures-benchmark-grasping-manipulation-and-assembly-deformable-objects",
+          "locator": "Physical task-board evaluation"
+        }
+      ],
+      "status": "verified"
+    },
+    "J04": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "REASSEMBLE records physical assembly and disassembly on the NIST task board.",
+      "sources": [
+        {
+          "url": "https://github.com/TUWIEN-ASL/REASSEMBLE",
+          "locator": "Dataset and physical setup"
+        }
+      ],
+      "status": "verified"
+    },
+    "K01": {
+      "tags": [
+        "Habitat-Sim"
+      ],
+      "note": "The navigation and rearrangement challenge environments use Habitat-Lab / Habitat-Sim. Preserve the challenge year and task protocol.",
+      "sources": [
+        {
+          "url": "https://github.com/facebookresearch/habitat-challenge",
+          "locator": "Challenge installation"
+        }
+      ],
+      "status": "verified"
+    },
+    "K02": {
+      "tags": [
+        "Habitat-Sim"
+      ],
+      "note": "The navigation and rearrangement challenge environments use Habitat-Lab / Habitat-Sim. Preserve the challenge year and task protocol.",
+      "sources": [
+        {
+          "url": "https://github.com/facebookresearch/habitat-challenge",
+          "locator": "Challenge installation"
+        }
+      ],
+      "status": "verified"
+    },
+    "K03": {
+      "tags": [
+        "Habitat-Sim"
+      ],
+      "note": "HomeRobot OVMM includes Habitat simulation and physical robot evaluation.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2306.11565v1",
+          "locator": "Section 3: simulation benchmark on Habitat"
+        },
+        {
+          "url": "https://github.com/facebookresearch/home-robot",
+          "locator": "HomeRobot simulation implementation"
+        }
+      ],
+      "status": "verified"
+    },
+    "K04": {
+      "tags": [
+        "Habitat-Sim"
+      ],
+      "note": "GOAT-Bench navigation installs Habitat-Sim 0.2.3 and uses HM3D scenes.",
+      "sources": [
+        {
+          "url": "https://github.com/Ram81/goat-bench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "K05": {
+      "tags": [
+        "AI2-THOR"
+      ],
+      "note": "ALFRED uses AI2-THOR; the original task environment specifies THOR 2.1.",
+      "sources": [
+        {
+          "url": "https://github.com/askforalfred/alfred",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "K06": {
+      "tags": [
+        "AI2-THOR"
+      ],
+      "note": "TEACh replays and evaluates its household episodes in AI2-THOR.",
+      "sources": [
+        {
+          "url": "https://github.com/alexa/teach",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "K07": {
+      "tags": [
+        "AI2-THOR",
+        "CoppeliaSim",
+        "Habitat-Sim"
+      ],
+      "note": "EB-ALFRED and EB-Navigation use AI2-THOR; EB-Habitat uses Habitat-Sim; EB-Manipulation uses CoppeliaSim / PyRep. The simulator depends on the track.",
+      "sources": [
+        {
+          "url": "https://github.com/EmbodiedBench/EmbodiedBench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "K08": {
+      "tags": [
+        "RoboEval symbolic simulator"
+      ],
+      "note": "The CodeBotler RoboEval edition uses a symbolic simulator and temporal-trace evaluator, not a continuous physics simulation.",
+      "sources": [
+        {
+          "url": "https://github.com/ut-amrl/codebotler",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "L01": {
+      "tags": [
+        "Habitat-Sim"
+      ],
+      "note": "PARTNR runs in the Habitat simulator, including human-in-the-loop collaboration.",
+      "sources": [
+        {
+          "url": "https://github.com/facebookresearch/partnr-planner",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "L02": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "Human-Robot Gym uses robosuite and MuJoCo; bindings depend on the release.",
+      "sources": [
+        {
+          "url": "https://github.com/TUMcps/human-robot-gym",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "L03": {
+      "tags": [
+        "PyBullet"
+      ],
+      "note": "HandoverSim uses a PyBullet simulation stack, including the mano_pybullet package.",
+      "sources": [
+        {
+          "url": "https://github.com/NVlabs/handover-sim",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "L04": {
+      "tags": [
+        "Isaac Gym"
+      ],
+      "note": "DexH2R uses Isaac Gym for simulation and grasp-stability tests, alongside its real-world handover dataset and experiments.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2506.23152v1",
+          "locator": "Section 5: experiment setup and grasp filtering"
+        }
+      ],
+      "status": "verified"
+    },
+    "L05": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "CT Benchmark specifies physical 3D-printed assembly parts, fixtures and fasteners rather than a simulator.",
+      "sources": [
+        {
+          "url": "https://github.com/Robotics-and-AI/collaborative-tasks-benchmark",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "L06": {
+      "tags": [
+        "PyBullet"
+      ],
+      "note": "Assistive Gym uses PyBullet.",
+      "sources": [
+        {
+          "url": "https://github.com/Healthcare-Robotics/assistive-gym/blob/main/setup.py",
+          "locator": "PyBullet runtime dependency"
+        }
+      ],
+      "status": "verified"
+    },
+    "M01": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "HumanoidBench uses MuJoCo; MJX training code is also included.",
+      "sources": [
+        {
+          "url": "https://github.com/carlosferrazza/humanoid-bench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "M02": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "LocoMuJoCo supports MuJoCo and its parallel MJX / MJWarp backends.",
+      "sources": [
+        {
+          "url": "https://github.com/robfiras/loco-mujoco",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "M03": {
+      "tags": [
+        "MuJoCo"
+      ],
+      "note": "DeepMind Control Suite environments run on MuJoCo.",
+      "sources": [
+        {
+          "url": "https://github.com/google-deepmind/dm_control",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "M04": {
+      "tags": [
+        "EvoGym"
+      ],
+      "note": "EvoGym supplies its own lightweight voxel-based soft-body simulator.",
+      "sources": [
+        {
+          "url": "https://github.com/EvolutionGym/evogym",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "N01": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "RoboArena official evaluations run on physical robots. Recommended simulation pretests are separate from the benchmark score.",
+      "sources": [
+        {
+          "url": "https://robo-arena.github.io/",
+          "locator": "Distributed real-world evaluation"
+        }
+      ],
+      "status": "verified"
+    },
+    "N02": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "RoboChallenge / Table30 V2 evaluates generalist policies on physical robots.",
+      "sources": [
+        {
+          "url": "https://github.com/RoboChallenge/RoboChallengeInference",
+          "locator": "Real-robot evaluation protocol"
+        }
+      ],
+      "status": "verified"
+    },
+    "N03": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "PhAIL consists of physical Franka manipulation rollouts and outcome labels.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2605.29710v1",
+          "locator": "Physical robot evaluation setup"
+        }
+      ],
+      "status": "verified"
+    },
+    "N04": {
+      "tags": [
+        "Real-world only"
+      ],
+      "note": "ArmnetBench v0.1 evaluates policies on a physical SO-101 arm farm.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2607.24481v1",
+          "locator": "Benchmark setup"
+        }
+      ],
+      "status": "verified"
+    },
+    "N05": {
+      "tags": [
+        "PyBullet"
+      ],
+      "note": "The 2022 challenge uses PyBullet TriFinger simulation in its pre-stage and physical TriFinger robots in its robot stage. Preserve the stage when comparing scores.",
+      "sources": [
+        {
+          "url": "https://webdav.tuebingen.mpg.de/real-robot-challenge/2022/docs/tasks.html",
+          "locator": "Tasks: simulation pre-stage and real-robot stage"
+        },
+        {
+          "url": "https://github.com/open-dynamic-robot-initiative/trifinger_simulation",
+          "locator": "PyBullet TriFinger simulation"
+        }
+      ],
+      "status": "verified"
+    },
+    "N06": {
+      "tags": [
+        "SAPIEN"
+      ],
+      "note": "SIMPLER uses SAPIEN through ManiSkill2; a ManiSkill3 branch offers GPU-parallel environments.",
+      "sources": [
+        {
+          "url": "https://github.com/simpler-env/SimplerEnv",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "N07": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "PolaRiS environments use Isaac Lab and its Isaac Sim app launcher.",
+      "sources": [
+        {
+          "url": "https://github.com/arhanjain/polaris",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "O01": {
+      "tags": [
+        "Offline / no simulator"
+      ],
+      "note": "WorldModelBench scores generated videos with a judge; no interactive physics simulator is required.",
+      "sources": [
+        {
+          "url": "https://github.com/WorldModelBench-Team/WorldModelBench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "O02": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "MiraBench evaluates generated videos offline. Its Arena-GR1 source trajectories come from Isaac Lab / Isaac Sim; PsiBot SynData contributes physical demonstrations.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2605.29360v1",
+          "locator": "Appendix A.1: Arena-GR1 data generation"
+        }
+      ],
+      "status": "verified"
+    },
+    "O03": {
+      "tags": [
+        "Isaac Sim"
+      ],
+      "note": "RoboWM-Bench provides Isaac Lab tasks; the repository specifies Isaac Sim 5.1.",
+      "sources": [
+        {
+          "url": "https://github.com/fffstrong/RoboWM-Bench",
+          "locator": "README: installation / benchmark environment"
+        }
+      ],
+      "status": "verified"
+    },
+    "O04": {
+      "tags": [
+        "Offline / no simulator"
+      ],
+      "note": "GraspNet evaluates predicted grasps against an annotated RGB-D dataset with analytical grasp scoring; no interactive robot simulator is required.",
+      "sources": [
+        {
+          "url": "https://graspnet.net/",
+          "locator": "Dataset / evaluation methodology"
+        }
+      ],
+      "status": "verified"
+    },
+    "O05": {
+      "tags": [
+        "Offline / no simulator"
+      ],
+      "note": "SuctionNet evaluates suction proposals against dataset labels with seal and wrench scores; no interactive robot simulator is required.",
+      "sources": [
+        {
+          "url": "https://github.com/graspnet/suctionnetAPI",
+          "locator": "Prediction representation and evaluation API"
+        }
+      ],
+      "status": "verified"
+    }
+  }
+}

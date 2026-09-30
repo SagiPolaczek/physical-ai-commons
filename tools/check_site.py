@@ -25,4 +25,16 @@ for term in ['.wiki-cache','/Users/','/private/','source_repository_credential']
 for b in d['benchmarks']:
  assert b['url'].startswith(('http://','https://'))
  for n in [b['paper']['citation_count'],b['github']['stars']]:assert n is None or isinstance(n,int)
+assert 'simulator' in p.ids
+sim=json.loads((root/'tools/simulators.json').read_text())
+assert set(sim['entries'])=={b['id'] for b in d['benchmarks']}
+assert d['simulatorsAsOf']==sim['reviewedAt']
+for b in d['benchmarks']:
+ s=b['simulator'];assert s==sim['entries'][b['id']]
+ assert s['tags'] and len(s['tags'])==len(set(s['tags']))
+ assert s['note'] and s['sources']
+ assert s['status'] in ['verified','unknown']
+ assert (s['tags']==['Not verified'])==(s['status']=='unknown')
+ for source in s['sources']:
+  assert source['url'].startswith('https://') and source['locator']
 print('PASS: catalog counts, missing-value types, internal anchors, local assets, and scoped public data.')

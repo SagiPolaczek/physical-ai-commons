@@ -27,7 +27,10 @@ assert len(benchmarks)==102 and len(papers)==107 and sum(len(x['evaluations']) f
 embodiments=json.loads((Path(__file__).parent/'embodiments.json').read_text())
 assert set(embodiments['entries'])=={b['id'] for b in benchmarks}
 for b in benchmarks:b['embodiment']=embodiments['entries'][b['id']]
-payload={'embodimentsAsOf':embodiments['reviewedAt'],'asOf':'2026-09-28','researchCommit':'ad87113','benchmarks':benchmarks,'papers':papers}
+simulators=json.loads((Path(__file__).parent/'simulators.json').read_text())
+assert set(simulators['entries'])=={b['id'] for b in benchmarks}
+for b in benchmarks:b['simulator']=simulators['entries'][b['id']]
+payload={'simulatorsAsOf':simulators['reviewedAt'],'embodimentsAsOf':embodiments['reviewedAt'],'asOf':'2026-09-28','researchCommit':'ad87113','benchmarks':benchmarks,'papers':papers}
 text=json.dumps(payload,ensure_ascii=False,separators=(',',':'))
 assert '.wiki-cache' not in text and '/Users/' not in text and '/private/' not in text
 (out/'data.json').write_text(text+'\n')
