@@ -1,0 +1,1087 @@
+{
+  "reviewedAt": "2026-09-30",
+  "scope": "All verified named simulator platforms in the benchmark catalog, plus four explicitly used robot-learning frameworks. Not an exhaustive catalog of robotics simulation software.",
+  "simulators": [
+    {
+      "id": "mujoco",
+      "name": "MuJoCo",
+      "type": "Physics engine",
+      "description": "Articulated dynamics and contact for manipulation, locomotion and model-based control.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Dexterous hand",
+        "Humanoid",
+        "Quadruped",
+        "Mobile robot",
+        "Mobile manipulator",
+        "Drone"
+      ],
+      "backends": [
+        "MuJoCo"
+      ],
+      "benchmarkTags": [
+        "MuJoCo"
+      ],
+      "benchmarkIds": [],
+      "note": "General-purpose articulated models; concrete assets, actuators and task definitions come from environment packages. MJX and MuJoCo Warp provide related acceleration paths. Open-sourced May 2022; the milestone here is the original 2012 paper.",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "release": {
+        "date": "2012",
+        "source_url": "https://doi.org/10.1109/IROS.2012.6386109",
+        "basis": "Original IROS 2012 paper (year precision)."
+      },
+      "paper": {
+        "title": "MuJoCo: A physics engine for model-based control",
+        "url": "https://doi.org/10.1109/IROS.2012.6386109",
+        "citations": 7916,
+        "record_url": "https://www.semanticscholar.org/paper/b354ee518bfc1ac0d8ac447eece9edb69e92eae1",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/google-deepmind/mujoco",
+        "repository": "google-deepmind/mujoco",
+        "stars": 15405,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/google-deepmind/mujoco",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/google-deepmind/mujoco",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://mujoco.readthedocs.io/en/stable/overview.html",
+          "locator": "Introduction; articulated structures, contact, model formats and project history."
+        },
+        {
+          "url": "https://github.com/google-deepmind/mujoco_menagerie",
+          "locator": "Curated robot models include arms, hands, humanoids and quadrupeds."
+        }
+      ]
+    },
+    {
+      "id": "pybullet",
+      "name": "PyBullet / Bullet",
+      "type": "Physics engine",
+      "description": "Python-accessible collision and rigid-body dynamics, robot control and reinforcement-learning environments.",
+      "embodiments": [
+        "Single-arm",
+        "Dexterous hand",
+        "Humanoid",
+        "Quadruped",
+        "Mobile robot"
+      ],
+      "backends": [
+        "Bullet"
+      ],
+      "benchmarkTags": [
+        "PyBullet"
+      ],
+      "benchmarkIds": [],
+      "note": "PyBullet is the Python robotics interface to Bullet, rather than a separate physics engine. The repository contains the broader Bullet SDK and examples.",
+      "url": "https://github.com/bulletphysics/bullet3",
+      "release": {
+        "date": "2016",
+        "source_url": "https://github.com/bulletphysics/bullet3#pybullet",
+        "basis": "Beginning of the 2016–2021 software citation supplied by maintainers (year precision)."
+      },
+      "paper": {
+        "title": null,
+        "url": null,
+        "citations": null,
+        "record_url": null,
+        "retrieved_at": null,
+        "provider": null,
+        "note": "Maintainers provide a software citation (Coumans and Bai, 2016–2021); no selected indexed paper citation count is recorded."
+      },
+      "github": {
+        "url": "https://github.com/bulletphysics/bullet3",
+        "repository": "bulletphysics/bullet3",
+        "stars": 14750,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/bulletphysics/bullet3",
+        "scope": "Entire Bullet Physics SDK repository; not PyBullet alone.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/bulletphysics/bullet3",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        }
+      ]
+    },
+    {
+      "id": "sapien",
+      "name": "SAPIEN",
+      "type": "Simulation platform",
+      "description": "Articulated-object interaction, robot manipulation, visual rendering and depth-sensor simulation.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Dexterous hand",
+        "Mobile manipulator",
+        "Humanoid"
+      ],
+      "backends": [
+        "PhysX"
+      ],
+      "benchmarkTags": [
+        "SAPIEN"
+      ],
+      "benchmarkIds": [],
+      "note": "SAPIEN supplies physics and rendering; environments such as ManiSkill implement robots and tasks above it. CPU/GPU and rendering features depend on the version.",
+      "url": "https://github.com/haosulab/SAPIEN",
+      "release": {
+        "date": "2020-03-19",
+        "source_url": "https://arxiv.org/abs/2003.08515",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "SAPIEN: A SimulAted Part-Based Interactive ENvironment",
+        "url": "https://arxiv.org/abs/2003.08515",
+        "citations": 904,
+        "record_url": "https://www.semanticscholar.org/paper/e0d2852be2a3f5952a6600eaa933f23bee448210",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/haosulab/SAPIEN",
+        "repository": "haosulab/SAPIEN",
+        "stars": 846,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/haosulab/SAPIEN",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/haosulab/SAPIEN",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://sapien-sim.github.io/docs/",
+          "locator": "SAPIEN 3 features and user guide."
+        },
+        {
+          "url": "https://github.com/mani-skill/ManiSkill",
+          "locator": "Examples built on SAPIEN across multiple embodiments."
+        }
+      ]
+    },
+    {
+      "id": "coppeliasim",
+      "name": "CoppeliaSim / V-REP",
+      "type": "Simulation platform",
+      "description": "Scene-based robot prototyping, kinematics, dynamics, sensors and industrial automation.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Mobile robot",
+        "Humanoid",
+        "Quadruped"
+      ],
+      "backends": [
+        "Bullet",
+        "ODE",
+        "MuJoCo",
+        "Vortex",
+        "Newton Dynamics"
+      ],
+      "benchmarkTags": [
+        "CoppeliaSim"
+      ],
+      "benchmarkIds": [],
+      "note": "A robot simulator with switchable physics plugins. Newton Dynamics is distinct from the newer NVIDIA/DeepMind/Disney Newton engine. A benchmark using CoppeliaSim does not establish which physics plugin it uses.",
+      "url": "https://github.com/CoppeliaRobotics/coppeliaSimLib",
+      "release": {
+        "date": "2013-01-10",
+        "source_url": "https://manual.coppeliarobotics.com/en/versionInfo.htm",
+        "basis": "V-REP 3.0.0 open-source milestone; the CoppeliaSim name was introduced later."
+      },
+      "paper": {
+        "title": "V-REP: A versatile and scalable robot simulation framework",
+        "url": "https://doi.org/10.1109/IROS.2013.6696520",
+        "citations": 1715,
+        "record_url": "https://www.semanticscholar.org/paper/0f67505c0af6b79a8dff134fe744a035c734bf7d",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Counts the original V-REP framework paper, before the CoppeliaSim rename."
+      },
+      "github": {
+        "url": "https://github.com/CoppeliaRobotics/coppeliaSimLib",
+        "repository": "CoppeliaRobotics/coppeliaSimLib",
+        "stars": 151,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/CoppeliaRobotics/coppeliaSimLib",
+        "scope": "CoppeliaSim core library; other plugins and binaries are distributed separately.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/CoppeliaRobotics/coppeliaSimLib",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://manual.coppeliarobotics.com/en/dynamicsModule.htm",
+          "locator": "Supported dynamics engines."
+        },
+        {
+          "url": "https://manual.coppeliarobotics.com/en/versionInfo.htm",
+          "locator": "Version history and robot model examples."
+        }
+      ]
+    },
+    {
+      "id": "isaac-sim",
+      "name": "NVIDIA Isaac Sim",
+      "type": "Simulation platform",
+      "description": "Robot and sensor simulation, photorealistic rendering, synthetic data and ROS integration.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Dexterous hand",
+        "Mobile robot",
+        "Mobile manipulator",
+        "Humanoid",
+        "Quadruped"
+      ],
+      "backends": [
+        "PhysX",
+        "Newton"
+      ],
+      "benchmarkTags": [
+        "Isaac Sim"
+      ],
+      "benchmarkIds": [],
+      "note": "Physics and rendering platform used by Isaac Lab and OmniGibson. Current documentation lists PhysX and Newton; older benchmark editions generally pin a particular Isaac Sim/PhysX stack. Backend availability is version-dependent.",
+      "url": "https://github.com/isaac-sim/IsaacSim",
+      "release": {
+        "date": "2020-09-09",
+        "source_url": "https://developer.nvidia.com/blog/accelerating-robotics-simulation-with-nvidia-omniverse-isaac-sim/",
+        "basis": "Documented Omniverse robotics edition milestone; earlier Isaac SDK simulators predate this."
+      },
+      "paper": {
+        "title": null,
+        "url": null,
+        "citations": null,
+        "record_url": null,
+        "retrieved_at": null,
+        "provider": null,
+        "note": "The official project supplies a software citation. No paper citation count is recorded; an independent Isaac Sim survey would measure a different work."
+      },
+      "github": {
+        "url": "https://github.com/isaac-sim/IsaacSim",
+        "repository": "isaac-sim/IsaacSim",
+        "stars": 4181,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/isaac-sim/IsaacSim",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/isaac-sim/IsaacSim",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/index.html",
+          "locator": "Current platform overview and available backends."
+        },
+        {
+          "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/robot_simulation/index.html",
+          "locator": "Wheeled robots, manipulators and policy-controlled robots."
+        },
+        {
+          "url": "https://github.com/isaac-sim/IsaacSim/blob/main/CITATION.cff",
+          "locator": "Official citation metadata identifies software, not a research paper."
+        }
+      ]
+    },
+    {
+      "id": "isaac-gym",
+      "name": "NVIDIA Isaac Gym",
+      "type": "Simulation platform",
+      "description": "GPU-parallel robot physics with tensor-based reinforcement-learning rollouts.",
+      "embodiments": [
+        "Single-arm",
+        "Dexterous hand",
+        "Humanoid",
+        "Quadruped"
+      ],
+      "backends": [
+        "PhysX"
+      ],
+      "benchmarkTags": [
+        "Isaac Gym"
+      ],
+      "benchmarkIds": [],
+      "note": "Standalone research SDK predating Isaac Lab. The linked repository supplies example environments rather than the simulator SDK itself. Preserve the simulator version when interpreting older results.",
+      "url": "https://github.com/isaac-sim/IsaacGymEnvs",
+      "release": {
+        "date": "2020-12-17",
+        "source_url": "https://developer.nvidia.com/blog/introducing-isaac-gym-rl-for-robotics/",
+        "basis": "Official preview-release announcement."
+      },
+      "paper": {
+        "title": "Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning",
+        "url": "https://arxiv.org/abs/2108.10470",
+        "citations": 1977,
+        "record_url": "https://www.semanticscholar.org/paper/49142e3e381c0dc7fee0049ea41d2ef02c0340d7",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/isaac-sim/IsaacGymEnvs",
+        "repository": "isaac-sim/IsaacGymEnvs",
+        "stars": 2954,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/isaac-sim/IsaacGymEnvs",
+        "scope": "IsaacGymEnvs example environments; not the SDK distribution.",
+        "archived": true
+      },
+      "sources": [
+        {
+          "url": "https://github.com/isaac-sim/IsaacGymEnvs",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://developer.nvidia.com/blog/introducing-isaac-gym-rl-for-robotics/",
+          "locator": "Preview announcement, PhysX and tensor interface."
+        }
+      ]
+    },
+    {
+      "id": "habitat-sim",
+      "name": "Habitat-Sim",
+      "type": "Simulation platform",
+      "description": "Indoor navigation, rearrangement and embodied interaction in scanned or synthetic scenes.",
+      "embodiments": [
+        "Virtual agent / abstract effector",
+        "Mobile robot",
+        "Mobile manipulator",
+        "Humanoid"
+      ],
+      "backends": [
+        "Bullet"
+      ],
+      "benchmarkTags": [
+        "Habitat-Sim"
+      ],
+      "benchmarkIds": [],
+      "note": "Simulation backend of the Habitat ecosystem. Rendered sensors and optional Bullet rigid/articulated physics support different tasks; the selected original Habitat paper does not describe every later feature.",
+      "url": "https://github.com/facebookresearch/habitat-sim",
+      "release": {
+        "date": "2019-04-02",
+        "source_url": "https://arxiv.org/abs/1904.01201",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "Habitat: A Platform for Embodied AI Research",
+        "url": "https://arxiv.org/abs/1904.01201",
+        "citations": 2148,
+        "record_url": "https://www.semanticscholar.org/paper/b4a35e548de27b6924e5f2ee41d37238a5c4a1d5",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Counts the original Habitat platform paper (2019), not the sum of Habitat 1.0, 2.0 and 3.0 citations."
+      },
+      "github": {
+        "url": "https://github.com/facebookresearch/habitat-sim",
+        "repository": "facebookresearch/habitat-sim",
+        "stars": 3828,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/facebookresearch/habitat-sim",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/facebookresearch/habitat-sim",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://aihabitat.org/",
+          "locator": "Habitat ecosystem, navigation, manipulation and human–robot interaction."
+        }
+      ]
+    },
+    {
+      "id": "ai2-thor",
+      "name": "AI2-THOR",
+      "type": "Simulation platform",
+      "description": "Interactive indoor scenes for navigation, object interaction, rearrangement and visual reasoning.",
+      "embodiments": [
+        "Virtual agent / abstract effector",
+        "Mobile robot",
+        "Single-arm"
+      ],
+      "backends": [
+        "PhysX"
+      ],
+      "benchmarkTags": [
+        "AI2-THOR"
+      ],
+      "benchmarkIds": [],
+      "note": "Built with Unity and its PhysX-based physics. Embodiment depends on the track: default agents use abstract actions; RoboTHOR targets navigation, and ManipulaTHOR adds an arm. Supporting a track does not imply all tasks accept every robot.",
+      "url": "https://github.com/allenai/ai2thor",
+      "release": {
+        "date": "2017-12-14",
+        "source_url": "https://arxiv.org/abs/1712.05474",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "AI2-THOR: An Interactive 3D Environment for Visual AI",
+        "url": "https://arxiv.org/abs/1712.05474",
+        "citations": 1558,
+        "record_url": "https://www.semanticscholar.org/paper/89c8aad71433f7638d2e2c009e1ea20e039f832d",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/allenai/ai2thor",
+        "repository": "allenai/ai2thor",
+        "stars": 1807,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/allenai/ai2thor",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/allenai/ai2thor",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://ai2thor.allenai.org/manipulathor/",
+          "locator": "Arm-based manipulation track."
+        },
+        {
+          "url": "https://ai2thor.allenai.org/robothor/",
+          "locator": "Navigation track."
+        },
+        {
+          "url": "https://arxiv.org/abs/1712.05474",
+          "locator": "Platform paper: Unity/physics architecture."
+        }
+      ]
+    },
+    {
+      "id": "genesis",
+      "name": "Genesis World (Genesis)",
+      "type": "Simulation platform",
+      "description": "Parallel multi-physics simulation of rigid robots, deformable materials and fluids.",
+      "embodiments": [
+        "Single-arm",
+        "Dexterous hand",
+        "Humanoid",
+        "Quadruped",
+        "Drone"
+      ],
+      "backends": [
+        "Genesis multi-physics"
+      ],
+      "benchmarkTags": [
+        "Genesis"
+      ],
+      "benchmarkIds": [],
+      "note": "Previously named Genesis. Current repository integrates rigid, FEM, MPM and particle solvers, with rendering and a compiler. Solver support and differentiability vary; this is not evidence that every benchmark supports all solvers.",
+      "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
+      "release": {
+        "date": "2024-12",
+        "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world#citation",
+        "basis": "December 2024 project/software reference (month precision)."
+      },
+      "paper": {
+        "title": null,
+        "url": null,
+        "citations": null,
+        "record_url": null,
+        "retrieved_at": null,
+        "provider": null,
+        "note": "Official citations refer to the software (December 2024) and a 2026 project blog post. No selected indexed paper count is recorded."
+      },
+      "github": {
+        "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
+        "repository": "Genesis-Embodied-AI/genesis-world",
+        "stars": 30011,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/Genesis-Embodied-AI/genesis-world",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://genesis-world.readthedocs.io/en/v1.0.0/user_guide/getting_started/policy_training/examples/index.html",
+          "locator": "Quadruped and drone learning examples."
+        }
+      ]
+    },
+    {
+      "id": "flex",
+      "name": "NVIDIA FleX",
+      "type": "Physics engine",
+      "description": "Unified particle simulation for cloth, soft bodies, fluids and rigid/deformable interactions.",
+      "embodiments": [
+        "Virtual agent / abstract effector"
+      ],
+      "backends": [
+        "FleX"
+      ],
+      "benchmarkTags": [
+        "NVIDIA FleX"
+      ],
+      "benchmarkIds": [],
+      "note": "A physics library rather than a complete robotics task framework. SoftGym supplies manipulation effectors and tasks above FleX; deformable objects are not themselves a soft-robot embodiment.",
+      "url": "https://github.com/NVIDIAGameWorks/FleX",
+      "release": {
+        "date": "2014",
+        "source_url": "https://doi.org/10.1145/2601097.2601152",
+        "basis": "Underlying unified-particle-physics paper, SIGGRAPH 2014 (year precision)."
+      },
+      "paper": {
+        "title": "Unified particle physics for real-time applications",
+        "url": "https://doi.org/10.1145/2601097.2601152",
+        "citations": 559,
+        "record_url": "https://www.semanticscholar.org/paper/77af191e6cb35edd1d84a96435fe8adedfd376d2",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Counts the underlying unified-particle-physics paper; not a simulator-specific adoption count."
+      },
+      "github": {
+        "url": "https://github.com/NVIDIAGameWorks/FleX",
+        "repository": "NVIDIAGameWorks/FleX",
+        "stars": 814,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/NVIDIAGameWorks/FleX",
+        "scope": "FleX SDK/demo distribution repository; engine source and ecosystem usage are not captured by stars.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/NVIDIAGameWorks/FleX",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://mmacklin.com/uppfrta.pdf",
+          "locator": "Underlying unified particle physics method."
+        },
+        {
+          "url": "https://github.com/Xingyu-Lin/softgym",
+          "locator": "Robotics manipulation environments using FleX."
+        }
+      ]
+    },
+    {
+      "id": "pymunk",
+      "name": "Pymunk",
+      "type": "Physics engine",
+      "description": "2D rigid-body dynamics for planar interaction, games and abstract manipulation tasks.",
+      "embodiments": [
+        "Virtual agent / abstract effector"
+      ],
+      "backends": [
+        "Chipmunk2D"
+      ],
+      "benchmarkTags": [
+        "Pymunk"
+      ],
+      "benchmarkIds": [],
+      "note": "Python interface to Chipmunk2D. Push-T uses a planar abstract pushing effector; Pymunk is not a 3D articulated-robot simulator.",
+      "url": "https://github.com/viblo/pymunk",
+      "release": {
+        "date": "2007",
+        "source_url": "https://github.com/viblo/pymunk",
+        "basis": "Maintainer-documented first version (year precision)."
+      },
+      "paper": {
+        "title": null,
+        "url": null,
+        "citations": null,
+        "record_url": null,
+        "retrieved_at": null,
+        "provider": null,
+        "note": "No selected research paper or indexed citation count is recorded for this software."
+      },
+      "github": {
+        "url": "https://github.com/viblo/pymunk",
+        "repository": "viblo/pymunk",
+        "stars": 1068,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/viblo/pymunk",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/viblo/pymunk",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://github.com/real-stanford/diffusion_policy",
+          "locator": "Push-T environment implemented with Pymunk."
+        }
+      ]
+    },
+    {
+      "id": "evogym",
+      "name": "EvoGym simulator",
+      "type": "Task-specific simulator",
+      "description": "2D voxel-based soft-robot simulation for joint morphology and controller optimization.",
+      "embodiments": [
+        "Soft robot"
+      ],
+      "backends": [
+        "EvoGym custom solver"
+      ],
+      "benchmarkTags": [
+        "EvoGym"
+      ],
+      "benchmarkIds": [],
+      "note": "Includes a task suite and its own soft-body simulator. Voxel morphology and 2D actuation differ from conventional articulated arms or humanoids.",
+      "url": "https://github.com/EvolutionGym/evogym",
+      "release": {
+        "date": "2022-01-24",
+        "source_url": "https://arxiv.org/abs/2201.09863",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "Evolution Gym: A Large-Scale Benchmark for Evolving Soft Robots",
+        "url": "https://arxiv.org/abs/2201.09863",
+        "citations": 136,
+        "record_url": "https://www.semanticscholar.org/paper/cd01f1a504e463ed82a0f1ee50886d43b4e4b2c2",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Counts the Evolution Gym benchmark-and-simulator paper; NeurIPS 2021 publication predates the January 2022 arXiv milestone."
+      },
+      "github": {
+        "url": "https://github.com/EvolutionGym/evogym",
+        "repository": "EvolutionGym/evogym",
+        "stars": 263,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/EvolutionGym/evogym",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/EvolutionGym/evogym",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        }
+      ]
+    },
+    {
+      "id": "daxbench",
+      "name": "DaXBench simulator",
+      "type": "Task-specific simulator",
+      "description": "Differentiable deformable-object manipulation with fluid, rope and cloth environments.",
+      "embodiments": [
+        "Virtual agent / abstract effector"
+      ],
+      "backends": [
+        "JAX-based differentiable solver"
+      ],
+      "benchmarkTags": [
+        "DaXBench (JAX)"
+      ],
+      "benchmarkIds": [],
+      "note": "DaXBench combines a benchmark and differentiable simulation framework. Its supplied tasks use simulated manipulation effectors; they do not establish a standard arm/hand asset library. The initial code release is documented as May 2023.",
+      "url": "https://github.com/AdaCompNUS/DaXBench",
+      "release": {
+        "date": "2022-10-24",
+        "source_url": "https://arxiv.org/abs/2210.13066",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "Benchmarking Deformable Object Manipulation with Differentiable Physics",
+        "url": "https://arxiv.org/abs/2210.13066",
+        "citations": 36,
+        "record_url": "https://www.semanticscholar.org/paper/fc715a1aac98fd5f5609e8fae16905ec3b85a057",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Counts the DaXBench benchmark-and-simulator paper; the release column records its first paper submission."
+      },
+      "github": {
+        "url": "https://github.com/AdaCompNUS/DaXBench",
+        "repository": "AdaCompNUS/DaXBench",
+        "stars": 72,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/AdaCompNUS/DaXBench",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/AdaCompNUS/DaXBench",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        }
+      ]
+    },
+    {
+      "id": "plasticinelab",
+      "name": "PlasticineLab simulator",
+      "type": "Task-specific simulator",
+      "description": "Differentiable elasto-plastic material simulation for tool-based soft-object manipulation.",
+      "embodiments": [
+        "Virtual agent / abstract effector"
+      ],
+      "backends": [
+        "Taichi-based differentiable MPM"
+      ],
+      "benchmarkTags": [
+        "PlasticineLab (Taichi)"
+      ],
+      "benchmarkIds": [],
+      "note": "Uses simplified manipulation tools and deformable material. Material softness does not establish support for soft robot embodiments.",
+      "url": "https://github.com/hzaskywalker/PlasticineLab",
+      "release": {
+        "date": "2021-04-07",
+        "source_url": "https://arxiv.org/abs/2104.03311",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "PlasticineLab: A Soft-Body Manipulation Benchmark with Differentiable Physics",
+        "url": "https://arxiv.org/abs/2104.03311",
+        "citations": 183,
+        "record_url": "https://www.semanticscholar.org/paper/15c59c5cd0e393dda0b411995310510719d03a0f",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/hzaskywalker/PlasticineLab",
+        "repository": "hzaskywalker/PlasticineLab",
+        "stars": 152,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/hzaskywalker/PlasticineLab",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/hzaskywalker/PlasticineLab",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://plasticinelab.csail.mit.edu/",
+          "locator": "Project description, differentiable physics and tool-based tasks."
+        },
+        {
+          "url": "https://arxiv.org/abs/2104.03311",
+          "locator": "Method: differentiable material point simulation."
+        }
+      ]
+    },
+    {
+      "id": "roboeval",
+      "name": "RoboEval symbolic simulator",
+      "type": "Symbolic simulator",
+      "description": "Runs generated service-robot programs and checks symbolic temporal traces.",
+      "embodiments": [
+        "Mobile robot"
+      ],
+      "backends": [
+        "Symbolic / no physical dynamics"
+      ],
+      "benchmarkTags": [
+        "RoboEval symbolic simulator"
+      ],
+      "benchmarkIds": [],
+      "note": "Models service-robot actions and their traces rather than continuous contacts, sensors or motor dynamics. The simulator is part of CodeBotler/RoboEval.",
+      "url": "https://github.com/ut-amrl/codebotler",
+      "release": {
+        "date": "2023-11-18",
+        "source_url": "https://arxiv.org/abs/2311.11183",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "Deploying and Evaluating LLMs to Program Service Mobile Robots",
+        "url": "https://arxiv.org/abs/2311.11183",
+        "citations": 72,
+        "record_url": "https://www.semanticscholar.org/paper/7d884f1ff991eb9fff7bf31fa006196e58934b8a",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Counts the CodeBotler/RoboEval system paper; it includes both program generation and evaluation."
+      },
+      "github": {
+        "url": "https://github.com/ut-amrl/codebotler",
+        "repository": "ut-amrl/codebotler",
+        "stars": 26,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/ut-amrl/codebotler",
+        "scope": "Entire CodeBotler system and RoboEval repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/ut-amrl/codebotler",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        }
+      ]
+    },
+    {
+      "id": "isaac-lab",
+      "name": "NVIDIA Isaac Lab",
+      "type": "Robot-learning framework",
+      "description": "Robot-learning environments, policy training, data collection and domain randomization.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Dexterous hand",
+        "Humanoid",
+        "Quadruped",
+        "Mobile robot",
+        "Mobile manipulator"
+      ],
+      "backends": [
+        "PhysX",
+        "Newton"
+      ],
+      "benchmarkTags": [],
+      "benchmarkIds": [
+        "B06",
+        "C01",
+        "E05",
+        "F03",
+        "G01",
+        "H05",
+        "H07",
+        "N07",
+        "O02",
+        "O03"
+      ],
+      "note": "Framework above Isaac Sim. Backends and robot assets depend on the release; the current main branch is development code. Benchmarks may use an optional Arena implementation alongside another simulator.",
+      "url": "https://github.com/isaac-sim/IsaacLab",
+      "release": {
+        "date": "2024-06-03",
+        "source_url": "https://isaac-orbit.github.io/",
+        "basis": "Official Isaac Lab release announcement; evolved from ORBIT."
+      },
+      "paper": {
+        "title": "Isaac Lab: A GPU-Accelerated Simulation Framework for Multi-Modal Robot Learning",
+        "url": "https://arxiv.org/abs/2511.04831",
+        "citations": 16,
+        "record_url": "https://www.semanticscholar.org/paper/cc6aa4157cea38d9af9907c10321a009389dba6b",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/isaac-sim/IsaacLab",
+        "repository": "isaac-sim/IsaacLab",
+        "stars": 8259,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/isaac-sim/IsaacLab",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/isaac-sim/IsaacLab",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://isaac-sim.github.io/IsaacLab/main/index.html",
+          "locator": "Framework architecture and feature documentation."
+        },
+        {
+          "url": "https://developer.nvidia.com/isaac/lab",
+          "locator": "Embodiments and current integration scope."
+        }
+      ]
+    },
+    {
+      "id": "robosuite",
+      "name": "robosuite",
+      "type": "Robot-learning framework",
+      "description": "Modular robots, controllers, sensors and manipulation environments above MuJoCo.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Humanoid",
+        "Mobile manipulator"
+      ],
+      "backends": [
+        "MuJoCo"
+      ],
+      "benchmarkTags": [],
+      "benchmarkIds": [
+        "A02",
+        "A06",
+        "B03",
+        "B04",
+        "D01",
+        "E04",
+        "E10",
+        "F04",
+        "F05",
+        "G02",
+        "G04",
+        "G07",
+        "G08",
+        "L02"
+      ],
+      "note": "Provides robot composition and learning environments above MuJoCo. Humanoid and whole-body support is documented in v1.5; older LIBERO/RoboCasa stacks use their own pinned versions.",
+      "url": "https://github.com/ARISE-Initiative/robosuite",
+      "release": {
+        "date": "2020-09-25",
+        "source_url": "https://arxiv.org/abs/2009.12293",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "robosuite: A Modular Simulation Framework and Benchmark for Robot Learning",
+        "url": "https://arxiv.org/abs/2009.12293",
+        "citations": 764,
+        "record_url": "https://www.semanticscholar.org/paper/cf34efc663284da131e747407ac3f389f898e471",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/ARISE-Initiative/robosuite",
+        "repository": "ARISE-Initiative/robosuite",
+        "stars": 2639,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/ARISE-Initiative/robosuite",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/ARISE-Initiative/robosuite",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        }
+      ]
+    },
+    {
+      "id": "maniskill",
+      "name": "ManiSkill (v3)",
+      "type": "Robot-learning framework",
+      "description": "GPU-parallel robot tasks, visual data collection, policy learning and evaluation.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Dexterous hand",
+        "Humanoid",
+        "Mobile manipulator"
+      ],
+      "backends": [
+        "PhysX"
+      ],
+      "benchmarkTags": [],
+      "benchmarkIds": [
+        "A05",
+        "E06",
+        "E07",
+        "E09",
+        "G06",
+        "N06"
+      ],
+      "note": "Powered by SAPIEN. The selected paper and milestone describe ManiSkill3; linked benchmark resources can use earlier ManiSkill2 or later versions with different assets and protocols.",
+      "url": "https://github.com/mani-skill/ManiSkill",
+      "release": {
+        "date": "2024-10-01",
+        "source_url": "https://arxiv.org/abs/2410.00425",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI",
+        "url": "https://arxiv.org/abs/2410.00425",
+        "citations": 328,
+        "record_url": "https://www.semanticscholar.org/paper/6116f4ce4ec1b3cda988e7b289eda6daea75f479",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Count applies to this selected reference paper, not all papers in the ecosystem."
+      },
+      "github": {
+        "url": "https://github.com/mani-skill/ManiSkill",
+        "repository": "mani-skill/ManiSkill",
+        "stars": 3369,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/mani-skill/ManiSkill",
+        "scope": "The linked official project repository.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/mani-skill/ManiSkill",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        }
+      ]
+    },
+    {
+      "id": "omnigibson",
+      "name": "OmniGibson",
+      "type": "Robot-learning framework",
+      "description": "Household scenes and tasks with object state changes, materials, navigation and manipulation.",
+      "embodiments": [
+        "Single-arm",
+        "Bimanual",
+        "Dexterous hand",
+        "Mobile robot",
+        "Mobile manipulator",
+        "Virtual agent / abstract effector"
+      ],
+      "backends": [
+        "PhysX"
+      ],
+      "benchmarkTags": [],
+      "benchmarkIds": [
+        "D02"
+      ],
+      "note": "Built on Isaac Sim for the BEHAVIOR ecosystem. Supports rigid/deformable objects, fluids and task predicates. The selected BEHAVIOR-1K paper covers the simulator together with the benchmark.",
+      "url": "https://github.com/StanfordVL/BEHAVIOR-1K",
+      "release": {
+        "date": "2024-03-14",
+        "source_url": "https://arxiv.org/abs/2403.09227",
+        "basis": "First arXiv submission of the selected reference paper; not necessarily the first software release."
+      },
+      "paper": {
+        "title": "BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1, 000 Everyday Activities and Realistic Simulation",
+        "url": "https://arxiv.org/abs/2403.09227",
+        "citations": 181,
+        "record_url": "https://www.semanticscholar.org/paper/66d7d369b00d4855455ce55dd7c9c1419da0c1d0",
+        "retrieved_at": "2026-09-30",
+        "provider": "Semantic Scholar",
+        "note": "Counts the BEHAVIOR-1K paper, not an OmniGibson-only paper or all BEHAVIOR editions."
+      },
+      "github": {
+        "url": "https://github.com/StanfordVL/BEHAVIOR-1K",
+        "repository": "StanfordVL/BEHAVIOR-1K",
+        "stars": 1729,
+        "retrieved_at": "2026-09-30",
+        "source_url": "https://api.github.com/repos/StanfordVL/BEHAVIOR-1K",
+        "scope": "BEHAVIOR-1K monorepo, which includes OmniGibson and other ecosystem components.",
+        "archived": false
+      },
+      "sources": [
+        {
+          "url": "https://github.com/StanfordVL/BEHAVIOR-1K",
+          "locator": "Official repository documentation and examples; reviewed 2026-09-30."
+        },
+        {
+          "url": "https://behavior.stanford.edu/omnigibson/overview.html",
+          "locator": "Isaac Sim/PhysX framework architecture."
+        },
+        {
+          "url": "https://behavior.stanford.edu/omnigibson/robots.html",
+          "locator": "Robot families and models."
+        },
+        {
+          "url": "https://behavior.stanford.edu/getting_started/important_concepts.html",
+          "locator": "OmniGibson scope and independent use."
+        }
+      ]
+    }
+  ]
+}

@@ -35,3 +35,7 @@ text=json.dumps(payload,ensure_ascii=False,separators=(',',':'))
 assert '.wiki-cache' not in text and '/Users/' not in text and '/private/' not in text
 (out/'data.json').write_text(text+'\n')
 print(f'Exported {len(benchmarks)} resources and {len(papers)} paper notes; {len(text):,} characters.')
+
+# Rebuild inverse links whenever the benchmark catalog is refreshed.
+import runpy
+runpy.run_path(str(Path(__file__).parent/"export_simulators.py"), run_name="__main__")

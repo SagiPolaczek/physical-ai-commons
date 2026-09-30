@@ -38,3 +38,29 @@ for b in d['benchmarks']:
  for source in s['sources']:
   assert source['url'].startswith('https://') and source['locator']
 print('PASS: catalog counts, missing-value types, internal anchors, local assets, and scoped public data.')
+# The separate simulator view must keep sources and inverse links consistent.
+platforms=json.loads((root/'dist/simulators.json').read_text())
+assert len(platforms['simulators'])==19
+assert len({s['id'] for s in platforms['simulators']})==19
+special={'Offline / no simulator','Real-world only','Not verified'}
+assert {t for s in platforms['simulators'] for t in s['benchmarkTags']}=={t for b in d['benchmarks'] for t in b['simulator']['tags'] if t not in special}
+by_id={b['id']:b for b in d['benchmarks']}
+for s in platforms['simulators']:
+ assert s['description'] and s['embodiments'] and s['backends'] and s['sources']
+ assert s['release']['date'] and s['release']['source_url'] and s['release']['basis']
+ assert s['github']['scope'] and s['github']['retrieved_at']
+ assert isinstance(s['github']['stars'],int) and s['github']['stars']>=0
+ assert s['paper']['citations'] is None or isinstance(s['paper']['citations'],int)
+ expected={b['id'] for b in d['benchmarks'] if set(s['benchmarkTags'])&set(b['simulator']['tags'])}|set(s['benchmarkIds'])
+ assert {b['id'] for b in s['benchmarks']}==expected
+ assert len(s['benchmarks'])==len(expected)
+ for b in s['benchmarks']:
+  assert b['name']==by_id[b['id']]['name'] and b['sources']==by_id[b['id']]['simulator']['sources']
+ for u in [s['url'],s['release']['source_url'],s['github']['url']]+[x['url'] for x in s['sources']]:assert u.startswith('https://'),u
+sp=Page();sp.feed((root/'dist/simulators.html').read_text())
+assert len(sp.ids)==len(set(sp.ids))
+for asset in sp.assets:
+ if not asset.startswith(('http','data:')):assert(root/'dist'/asset).is_file(),asset
+for url in sp.links:
+ if not url.startswith(('http','data:','#')):assert(root/'dist'/url).exists(),url
+print('PASS: separate simulator page, all named platform coverage, metric provenance and exact inverse benchmark mappings.')
