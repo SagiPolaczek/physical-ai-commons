@@ -8,7 +8,7 @@ Click column headings to sort by name, capability, embodiment, simulator, releas
 
 Run `python3 tools/export_research.py /path/to/research` to refresh the scoped public dataset. Review snapshot dates before publishing. The existing dataset also retains the source paper-to-benchmark mappings for future maintenance; the benchmark interface displays the existing benchmark table.
 
-Serve `dist/` with a static HTTP server. No dependencies, accounts or analytics. Sites publication is configured in `.openai/hosting.json`.
+Serve `dist/` with a static HTTP server. No dependencies, accounts or analytics. GitHub Pages publication is configured in `.github/workflows/pages.yml`.
 
 Embodiment labels are curated in `tools/embodiments.json` and retained by the export. Entries may have multiple labels; unknown classifications are explicit. These describe the documented resource scope, not robot compatibility for every task or score. Labels reviewed September 29, 2026.
 
@@ -28,4 +28,4 @@ The website is ready for GitHub Pages. `.github/workflows/pages.yml` validates t
 
 Push this standalone repository to the chosen GitHub repository, then set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow publishes both the benchmark table and `simulators.html` under the repository's Pages address. Assets, data requests and navigation use relative paths, so repository subpaths are supported.
 
-The existing `.openai/hosting.json` is retained for the previous host; GitHub Pages does not use it.
+GitHub Pages is the primary host. The previous published site remains available independently; its configuration can be recovered from Git history.
