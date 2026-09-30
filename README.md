@@ -19,3 +19,11 @@ Simulator labels are curated in `tools/simulators.json` and retained by the expo
 Columns cover name/type, capabilities, documented embodiments, physics backend, public release milestone, selected-paper citations, repository stars, and benchmark uses in this catalog. Search and type, embodiment and backend filters combine. Citation counts come from Semantic Scholar; star counts come from the GitHub repository API, retrieved September 30, 2026. Software-only references have unavailable paper citation counts. Details explain reference/repository scope and link to the benchmark rows.
 
 Curated source facts and metric provenance live in `tools/simulation-platforms.json`. Run `python3 tools/export_simulators.py` after editing those facts or changing the benchmark catalog. `export_research.py` also rebuilds inverse links automatically. Framework-to-benchmark links are explicit reviewed IDs; engine links derive from the existing simulator tags. Run `python3 tools/check_site.py`, `node --check dist/app.js`, `node --check dist/simulator-table.js` and `git diff --check` before publishing.
+
+## GitHub Pages
+
+The website is ready for GitHub Pages. `.github/workflows/pages.yml` validates the catalogs and publishes only `dist/` on pushes to `main`, or when run manually. No build dependencies or research repository checkout are needed to publish the existing snapshot.
+
+Push this standalone repository to the chosen GitHub repository, then set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow publishes both the benchmark table and `simulators.html` under the repository's Pages address. Assets, data requests and navigation use relative paths, so repository subpaths are supported.
+
+The existing `.openai/hosting.json` is retained for the previous host; GitHub Pages does not use it.
