@@ -1,4 +1,6 @@
-# Physical AI Benchmarks and Simulators
+# Physical AI Commons
+
+[Benchmarks](https://sagipolaczek.github.io/physical-ai-commons/) · [Simulators](https://sagipolaczek.github.io/physical-ai-commons/simulators.html)
 
 A public, table-only catalog of 102 benchmark resources across 15 capability groups. Snapshot: September 28, 2026.
 
