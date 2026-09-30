@@ -1,31 +1,18 @@
 # Physical AI Commons
 
-[Benchmarks](https://sagipolaczek.github.io/physical-ai-commons/) · [Simulators](https://sagipolaczek.github.io/physical-ai-commons/simulators.html)
+A source-linked reference for physical AI benchmarks and simulators.
 
-A public, table-only catalog of 102 benchmark resources across 15 capability groups. Snapshot: September 28, 2026.
+**[Visit the website →](https://sagipolaczek.github.io/physical-ai-commons/)**
 
-Click column headings to sort by name, capability, embodiment, simulator, release milestone, selected-paper citations or repository stars. Repeated clicks reverse the order. Missing values sort last in either direction. Search, capability embodiment and simulator filters combine with sorting. Row details retain source links, evaluation boundaries and popularity context.
+## Explore
 
-Run `python3 tools/export_research.py /path/to/research` to refresh the scoped public dataset. Review snapshot dates before publishing. The existing dataset also retains the source paper-to-benchmark mappings for future maintenance; the benchmark interface displays the existing benchmark table.
+- **[Benchmarks](https://sagipolaczek.github.io/physical-ai-commons/)** — Find what each benchmark tests, which robots and simulators it uses, and its release date, paper citations and GitHub stars.
+- **[Simulators](https://sagipolaczek.github.io/physical-ai-commons/simulators.html)** — Compare simulation platforms, supported embodiments, physics backends and the benchmarks that use them.
 
-Serve `dist/` with a static HTTP server. No dependencies, accounts or analytics. GitHub Pages publication is configured in `.github/workflows/pages.yml`.
+Search, filter and sort either table. Expand a row for sources and context.
 
-Embodiment labels are curated in `tools/embodiments.json` and retained by the export. Entries may have multiple labels; unknown classifications are explicit. These describe the documented resource scope, not robot compatibility for every task or score. Labels reviewed September 29, 2026.
+Citation and star counts are dated snapshots. Missing values are marked explicitly, and coverage is still growing.
 
-Simulator labels are curated in `tools/simulators.json` and retained by the export. They identify the simulator platform, with frameworks, versions and track boundaries in the details. Several platforms can apply to different implementations of one resource. For offline resources, a simulator tag can describe source-trajectory generation; optional development simulators are identified explicitly. Physical-only resources, offline resources without an interactive simulator, and unverified engines have separate labels. Reviewed September 30, 2026.
+## Contribute
 
-## Separate simulator table
-
-`dist/simulators.html` is an independent sortable table, accessible through the Benchmarks / Simulators navigation. It contains the 15 named simulator platforms from the benchmark catalog and four explicitly used learning frameworks. This is not an exhaustive robotics simulator catalog.
-
-Columns cover name/type, capabilities, documented embodiments, physics backend, public release milestone, selected-paper citations, repository stars, and benchmark uses in this catalog. Search and type, embodiment and backend filters combine. Citation counts come from Semantic Scholar; star counts come from the GitHub repository API, retrieved September 30, 2026. Software-only references have unavailable paper citation counts. Details explain reference/repository scope and link to the benchmark rows.
-
-Curated source facts and metric provenance live in `tools/simulation-platforms.json`. Run `python3 tools/export_simulators.py` after editing those facts or changing the benchmark catalog. `export_research.py` also rebuilds inverse links automatically. Framework-to-benchmark links are explicit reviewed IDs; engine links derive from the existing simulator tags. Run `python3 tools/check_site.py`, `node --check dist/app.js`, `node --check dist/simulator-table.js` and `git diff --check` before publishing.
-
-## GitHub Pages
-
-The website is ready for GitHub Pages. `.github/workflows/pages.yml` validates the catalogs and publishes only `dist/` on pushes to `main`, or when run manually. No build dependencies or research repository checkout are needed to publish the existing snapshot.
-
-Push this standalone repository to the chosen GitHub repository, then set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow publishes both the benchmark table and `simulators.html` under the repository's Pages address. Assets, data requests and navigation use relative paths, so repository subpaths are supported.
-
-GitHub Pages is the primary host. The previous published site remains available independently; its configuration can be recovered from Git history.
+Know a missing resource or found an outdated entry? [Open an issue](https://github.com/SagiPolaczek/physical-ai-commons/issues) or submit a pull request with a link to the original paper, documentation or repository.
